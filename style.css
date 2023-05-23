@@ -14,6 +14,7 @@
     border: none;
     font-family: 'poppins';
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -24,6 +25,7 @@
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
     background-color: #F0A04B;
+    cursor: pointer;
 }
 
 body{
@@ -103,8 +105,59 @@ body{
     display: none;
 }
 
+.logo h1{
+    font-family: bebas neue;
+    color: #F0A04B;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
 #nav-btn{
     display: none;
+}
+
+#nav-btn img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-menu{
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+    background-color: #01000e;
+    transform: translateX(-1000px);
+    transition: 0.5s ease-in-out;
+
+}
+
+.nav-active{
+    transform: translateX(0px);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-menu a{
+    color: #F0A04B;
+    font-family: bebas neue;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.lay-nav-close{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+#nav-close{
+    width: 30px ;
+    height: 30px;
 }
 
 .nav-link{
@@ -115,6 +168,12 @@ body{
     color: #fff;
     padding: 0px 12px;
     font-weight: 400;
+    transition: 0.4s ease;
+}
+
+.nav-link a:hover{
+    color: #F0A04B;
+    transition: 0.4s ease;
 }
 
 .home{
@@ -132,10 +191,9 @@ body{
 
 .home img{
     object-fit: contain;
-    height: 70%;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
+    /* height: 70%; */
+    width: 500px;
+    display: none;
 }
 
 .home h1{
@@ -150,9 +208,10 @@ body{
 }
 
 .home p{
-    color: #ccc;
+    color: #F0A04B;
+    text-align: center;
     text-transform: capitalize;
-    max-width: 480px;
+    display: none;
 }
 
 .linimasa{
@@ -161,7 +220,8 @@ body{
 }
 
 .linimasa .judul{
-    color: #fff;
+    color: #F0A04B;
+    font-style: italic;
     text-align: center;
     letter-spacing: 4px;
     font-family: bebas neue;
@@ -178,12 +238,26 @@ body{
     min-width: 400px;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin: 60px 0px;
+}
+
+.sel-linimasa{
+    color: #fff;
+    text-align: left;
+    width: 400px;
+    margin-top: 10px;
+    display: none;
+}
+
+.sel-linimasa:hover{
+    color: #F0A04B;
 }
 
 .box-linimasa{
     max-width: 400px;
-    margin: 60px 40px;
     height: 100%;
     color: #ccc;
     cursor: none;
@@ -436,10 +510,152 @@ body{
     background-color: #F0A04B;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+.footer{
+    padding: 20px 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #381d00;
+}
+
+.footer-1{
+    width: 30%;
+    max-width: 300px;
+}
+
+.footer-1 h1{
+    font-family: bebas neue;
+    color: #F0A04B;
+    font-style: italic;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+.footer-1 .header-footer1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-1 img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.footer-1 p{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.link-footer{
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-2,.footer-3,.footer-4{
+    width: 20%;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.footer-2 h1,.footer-3 h1,.footer-4 h1{
+    color: #F0A04B;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: bebas neue;
+    letter-spacing: 2px;
+}
+
+.footer-2 a,.footer-3 a,.footer-4 a{
+    color: #dedede;
+    transition: 0.3s ease;
+}
+
+.footer-2 a:hover,.footer-3 a:hover,.footer-4 a:hover{
+    color: #F0A04B;
+    transition: 0.3s ease;
+}
+
+.landing-blog{
+    min-height: 100vh;
+    background-image: url(img/proklamasi-kemerdekaan.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.isi-blog{
+    align-items: center;
+}
+
+.isi-blog1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+}
+
+.isi-blog2{
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    margin: 30px 0px;
 
 }
 
+.isi-blog1 img, .isi-blog2 img,.isi-blog1 video{
+    width: 500px;
+    height: 400px;
+    object-position: top;
+    object-fit: contain;margin: 10px 0px;
+}
+
+.isi-blog h1{
+    color: #F0A04B;
+    font-family: bebas neue;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.isi-blog1 h1,.isi-blog2 h1{
+    font-size: 30px;
+}
+
+.isi-blog1 p,.isi-blog2 p{
+    color: #ccc;
+    max-width: 600px;
+    font-size: 13px;
+}
+
 @media screen and (max-width:998px) {
+    .home{
+        min-height: 100vh;
+        height: 100%;
+        background-image: none;
+        background-color: #01000e;
+        padding-top: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .home p{
+        display: block;
+    }
+
+    .home img{
+        display: block;
+    }
     .area-linimasa{
         flex-direction: column;
     }
@@ -454,6 +670,30 @@ body{
 
     .area-film{
         flex-wrap: wrap;
+    }
+
+    .lihat{
+        display: none;
+        position:static;
+    }
+
+    .sel-linimasa{
+        display: block;
+    }
+
+    .footer{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .link-footer{
+        flex-direction: column;
+        margin: 20px 0px;
+        min-width: 0px;
+        /* align-items: center; */
+    }
+    .footer-1{
+        width: 100%;
     }
 }
 
@@ -473,7 +713,7 @@ body{
         color: #F0A04B;
     }
     .img-museum1,.img-museum2,.img-museum3{
-        position: relative;
+        position: static;
         width: 70%;
         height: 250px;
         object-fit: contain;
@@ -484,14 +724,44 @@ body{
     .museum .garis{
         display: none;
     }
+
+    .nav-link{
+        display: none;
+    }
+
+    #nav-btn{
+        display: block;
+    }
+
+    .isi-blog1 p,.isi-blog2 p{
+        max-width: 450px;
+    }
+
 }
 
 @media screen and (max-width:500px) {
+
+    .home img{
+        width: 90%;
+    }
+
+    .home h1{
+        font-size: 40px;
+    }
+
+    .home p{
+        font-size: 13px;
+    }
     .linimasa-image{
         object-fit: cover;
     }
 
     .box-linimasa{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .sel-linimasa{
         width: 90%;
         max-width: 300px;
     }
@@ -523,5 +793,22 @@ body{
 
     .input-pertanyaan .submit-text{
         padding: 10px 5px;
+    }
+
+    .nav-menu{
+        width: 100%;
+    }
+
+    .isi-blog{
+        padding: 5%;
+    }
+
+    .isi-blog1 img, .isi-blog2 img,.isi-blog1 video{
+        width: 90%;
+        height: fit-content;
+    }
+
+    .isi-blog1 p,.isi-blog2 p{
+        max-width: 90%;
     }
 }

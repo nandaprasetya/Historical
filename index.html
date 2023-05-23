@@ -8,41 +8,56 @@
     <title>HISTORICAL | Sejarah Indonesia</title>
     <script src="jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Navigation -->
 
-    <!-- <div class="nav">
+    <div class="nav">
         <div class="logo">
             <h1>Historical</h1>
             <img id="logo" src="img/logo.png" alt="">
         </div>
         <div class="nav-link">
-            <a href="">Beranda</a>
-            <a href="">Linimasa</a>
-            <a href="">Musium</a>
-            <a href="">Tempat bersejarah</a>
+            <a href="#home">Beranda</a>
+            <a href="#linimasa">Linimasa</a>
+            <a href="#film">Film</a>
+            <a href="#museum">Museum</a>
         </div>
         <div class="nav-btn" id="nav-btn">
-            <img src="" alt="">
+            <img src="img/menu.png" alt="">
         </div>
-    </div> -->
+    </div>
+
+    <div class="nav-menu">
+        <div class="lay-nav-close">
+            <img src="img/close.png" alt="" id="nav-close">
+        </div>
+            <a id="nav-link" href="#home">Beranda</a>
+            <a id="nav-link1" href="#linimasa">Linimasa</a>
+            <a id="nav-link2" href="#film">Film</a>
+            <a id="nav-link3" href="#museum">Museum</a>
+    </div>
     <!-- Homepage -->
 
-    <div class="container home column">
-        <h1>Pelajari sejarah  di era digital</h1>
+    <div id="home" class="container home column">
+        <div class="text-home column">
+            <h1>Pelajari sejarah  di era digital</h1>
+            <p>"Jangan Sekali-kali Melupakan Sejarah" <br> -Soekarno</p>
+        </div>
+        <img src="img/objekvr.png" alt="">
     </div>
     <div class="lihat" id="lihat">
         <h1 class="text-lihat">Lihat</h1>
     </div>
 
     <!-- Linimasa -->
-    <div class="linimasa container p-ats column">
+    <div id="linimasa" class="linimasa container p-ats column">
         <h1 class="judul">Linimasa INDONESIA</h1>
         <div class="garis"></div>
         <div class="area-linimasa container">
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa1.jpg" alt="">
                 </div>
@@ -50,9 +65,11 @@
                 <h1>Kedatangan Bangsa Portugis</h1>
                 <p>Bangsa Portugis Tiba di Malaka bersama Alfonso d' Albuquerque- Pemimpin Bangsa Portugis</p>
             </a>
+            <a href="detail.html" class="sel-linimasa">Selengkapnya</a>
+
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa2.jpg" alt="">
                 </div>
@@ -62,7 +79,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa3.jpg" alt="">
                 </div>
@@ -72,7 +89,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa4.jpg" alt="">
                 </div>
@@ -82,7 +99,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa5.jpg" alt="">
                 </div>
@@ -92,7 +109,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa6.jpg" alt="">
                 </div>
@@ -102,7 +119,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa7.png" alt="">
                 </div>
@@ -112,7 +129,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa8.jpg" alt="">
                 </div>
@@ -122,7 +139,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa9.jpg" alt="">
                 </div>
@@ -132,7 +149,7 @@
             </a>
             </div>
             <div class="lay-linimasa">
-            <a href="" class="box-linimasa column">
+            <a href="detail.html" class="box-linimasa column">
                 <div class="area-image">
                     <img class="linimasa-image" src="img/linimasa10.png" alt="">
                 </div>
@@ -142,7 +159,7 @@
             </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa11.png" alt="">
                     </div>
@@ -153,9 +170,9 @@
             </div>
             
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa box-lagu column background-merah">
+                <a href="detail.html" class="box-linimasa box-lagu column background-merah">
                     <div class="area-image">
-                        <video class="linimasa-image video-lagu" controls src="https://upload.wikimedia.org/wikipedia/commons/transcoded/6/6f/Indonesia_Raya_1945.ogv/Indonesia_Raya_1945.ogv.240p.webm"></video>
+                        <video class="linimasa-image video-lagu" controls src="img/Indonesia Raya.mp4"></video>
                     </div>
                     <h2>1924 & 28 Oktober 1928</h2>
                     <h1>Lagu Indonesia Raya Diciptakan</h1>
@@ -163,7 +180,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa13.png" alt="">
                     </div>
@@ -173,7 +190,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa14.png" alt="">
                     </div>
@@ -183,7 +200,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa15.jpg" alt="">
                     </div>
@@ -193,7 +210,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa16.jpg" alt="">
                     </div>
@@ -203,7 +220,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa17.jpg" alt="">
                     </div>
@@ -213,7 +230,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa18.jpg" alt="">
                     </div>
@@ -223,7 +240,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa19.jpg" alt="">
                     </div>
@@ -233,7 +250,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa20.jpeg" alt="">
                     </div>
@@ -243,7 +260,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa21.jpg" alt="">
                     </div>
@@ -253,7 +270,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa22.jpeg" alt="">
                     </div>
@@ -262,8 +279,8 @@
                     <p>Pertempuran Ambarawa di Provinsi Jawa Tengah melibatkan Tentara Keamanan Rakyat (TKR) Indonesia dengan pasukan tentata Inggris. Pertempuran ini berlangsung selama sekitar tiga minggu, dimulai pada tanggal 20 November 1945 hingga 15 Desember 1945.</p>
                 </a>    
             </div>
-            <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+            <div class="lay-linimasa">  
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa23.png" alt="">
                     </div>
@@ -273,7 +290,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa24.jpg" alt="">
                     </div>
@@ -283,7 +300,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa25.jpg" alt="">
                     </div>
@@ -293,7 +310,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa26.jpg" alt="">
                     </div>
@@ -303,7 +320,7 @@
                 </a>    
             </div>
             <div class="lay-linimasa">
-                <a href="" class="box-linimasa column background-merah">
+                <a href="detail.html" class="box-linimasa column background-merah">
                     <div class="area-image">
                         <img class="linimasa-image" src="img/linimasa26.jpg" alt="">
                     </div>
@@ -314,10 +331,10 @@
             </div>
         </div>
     </div>
-    <div class="film container column p-ats">
+    <div id="film" class="film container column p-ats">
         <h1>Film Sejarah Indonesia</h1>
         <div class="area-film container">
-            <a href="" class="box-film film1">
+            <a href="https://id.wikipedia.org/wiki/Merah_Putih_(film)" class="box-film film1">
                 <div class="text-film text-film1 column">
                     <h1>Merah Putih</h1>
                     <p>2009 - Perang/Drama</p>
@@ -326,7 +343,7 @@
                 <img src="img/Merah_Putih.jpg" alt="">
                 <h1><span>Merah</span> Putih</h1>
             </a>
-            <a href="" class="box-film film2">
+            <a href="https://id.wikipedia.org/wiki/Soekarno_(film)" class="box-film film2">
                 <div class="text-film text-film2 column">
                     <h1>Soekarno</h1>
                     <p>2013 - Drama</p>
@@ -335,7 +352,7 @@
                 <img src="img/Soekarno.jpg" alt="">
                 <h1>Soekarno</h1>
             </a>
-            <a href="" class="box-film film3">
+            <a href="https://id.wikipedia.org/wiki/Kartini_(film)" class="box-film film3">
                 <div class="text-film text-film3 column">
                     <h1>Kartini</h1>
                     <p>2017 - Drama/Sejarah</p>
@@ -344,7 +361,7 @@
                 <img src="img/Kartini.jpg" alt="">
                 <h1>Kartini</h1>
             </a>
-            <a href="" class="box-film film4">
+            <a href="https://id.wikipedia.org/wiki/Jenderal_Soedirman_(film)" class="box-film film4">
                 <div class="text-film text-film4 column">
                     <h1>Jenderal Soedirman</h1>
                     <p>2015  - Drama/Laga</p>
@@ -356,7 +373,7 @@
         </div>
         <a class="sel-film" href="">Selengkapnya</a>
     </div>
-    <div class="museum container column p-ats">
+    <div id="museum" class="museum container column p-ats">
         <h1>Museum</h1>
         <div class="garis"></div>
         <div class="area-museum area-museum1">
@@ -382,7 +399,7 @@
         <div class="garis"></div>
         <a style="margin: 40px 0px 10px;" class="sel-film" href="">Selengkapnya</a>
     </div>
-    <div class="pertanyaan container column p-ats">
+    <div id="pertanyaan" class="pertanyaan container column p-ats">
         <div class="header-pertanyaan column">
             <h1>Memiliki Pertanyaan Mengenai Sejarah ?</h1>
             <p>Dengan Histori AI kamu bisa mendapatkan Jawaban Mengenai Sejarah Indonesia dan Sejarah Dunia</p>
@@ -391,6 +408,38 @@
             <input class="input-text" type="text" placeholder="Berapa Tahun Belanda Menjajah Indonesia ?">
             <input class="submit-text" type="submit" value="Cari">
         </form>
+    </div>
+    <div class="footer container">
+        <div class="footer-1">
+            <div class="header-footer1">
+                <img src="img/logo.png" alt="">
+                <h1>Historical</h1>
+            </div>
+            <p>Belajar Sejarah Lebih Menyenangkan Dengan Historical,ada pertanyaan mengenai sejarah ?, Tanyakan kepada Histori AI.</p>
+        </div>
+        <div class="link-footer">
+            <div class="footer-2 column">
+                <h1>Fitur</h1>
+                <a href="#linimasa">Blog</a>
+                <a href="#pertanyaan">Histori AI</a>
+                <a href="">Berita</a>
+                <a href="">Bantuan</a>
+                <a href="">Kontak</a>
+            </div>
+            <div class="footer-3 column">
+                <h1>Sosial</h1>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+                <a href="">Youtube</a>
+                <a href="">Linkedin</a>
+            </div>
+            <div class="footer-4 column">
+                <h1>Legal</h1>
+                <a href="">Keamanan</a>
+                <a href="">Privasi</a>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -428,7 +477,25 @@
     }
     
     document.onmousemove = follow;
-    
+
+    $("#nav-btn").click(function(){
+        $(".nav-menu").toggleClass("nav-active");
+    });
+    $("#nav-link").click(function(){
+        $(".nav-menu").removeClass("nav-active");
+    });
+    $("#nav-link1").click(function(){
+        $(".nav-menu").removeClass("nav-active");
+    });
+    $("#nav-link2").click(function(){
+        $(".nav-menu").removeClass("nav-active");
+    });
+    $("#nav-link3").click(function(){
+        $(".nav-menu").removeClass("nav-active");
+    });
+    $("#nav-close").click(function(){
+        $(".nav-menu").removeClass("nav-active");
+    });
     $(".area-museum1").mouseenter(function(){
         $(".img-museum1").addClass("museumhover");
     });
@@ -522,7 +589,6 @@
         threshold : 0.6,
     }
     );
-
 
     liniimg.forEach(linimg => {
         observer.observe(linimg);
